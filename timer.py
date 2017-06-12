@@ -2,7 +2,7 @@ import time
 import subprocess
 
 def timer():
-	timeleft = 3
+	timeleft = 600
 	while timeleft > 0:
 		print("timeleft = ", timeleft)
 		time.sleep(1)
