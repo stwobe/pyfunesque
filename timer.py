@@ -14,9 +14,10 @@ import time # see below - this is used pause/count the seconds
 import subprocess # this is for calling commands from Bash - see below
 
 def timer(): # our main timer function
+	subprocess.call(["aplay", "/usr/lib/libreoffice/share/gallery/sounds/horse.wav"])
 	timeleft = 300 #default is 10 minutes = 600 seconds - warm up oven
 	while timeleft > 0: # set up while loop for timer
-		print("timeleft = ", timeleft) #print how many seconds are left
+		print("timeleft ", timeleft) #print how many seconds are left
 		time.sleep(1) # halt the program for one second on each pass
 		timeleft -= 1 # subtract one second each time around
 		
